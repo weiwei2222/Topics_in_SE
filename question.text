@@ -3,11 +3,13 @@ Recursion:
 Questions:
 
 Question1.What is potential consequence of not including a base case in a recursive function?
-
-
+Defining a base case in recursive functions is crucial because it determines when the recursion should stop. 
+Without a base case, the function would continue calling itself indefinitely, 
+leading to stack overflow errors and an infinite loop.
 
 Question2.What does memoization allow you to avoid?
-
+In computing, memoization is used to speed up computer programs by eliminating the repetitive computation of results, 
+and by avoiding repeated calls to functions that process the same input.
 
 Question3.What are the steps to writing a recursive function?
 1. Create a regular function with a base case that can be reached with its parameters.
@@ -20,15 +22,33 @@ Linked Lists:
 
 Questions:
 
-Why would we use a Linked List instead of an array?
-When we want to add a node to a linked list, do we have to scoot over the subsequent nodes (like we do for arrays)?
-Can we do index access like we can with arrays with linked lists?
+1.Why would we use a Linked List instead of an array?
+Arrays are best suited for situations where the size of the collection is known in advance 
+and where elements need to be accessed or manipulated quickly. 
+Linked lists are more flexible and adaptable and are best suited for situations where the size of the collection is not known.
+
+2.When we want to add a node to a linked list, do we have to scoot over the subsequent nodes (like we do for arrays)?
+Unlike arrays, we cannot access any elements in a linked list directly. We must traverse from the head node to the last node.
+
+3.Can we do index access like we can with arrays with linked lists?
+No.The elements are not indexed, so random access like an array is not possible.
+
 
 
 
 Testing:
 Questions: 
 
-Why do we create tests?
-What is automated testing?
-What is TDD?
+1.Why do we create tests?Nobody wants to find bugs in their application, especially not customers. 
+This is why testing is a necessary step in the software development lifecycle (SDLC). 
+It ensures that your application looks and functions as expected, maintaining customer satisfaction.  
+
+2.What is automated testing?
+Automated testing is the implementation of an automation tool to execute test cases.  
+This is well-suited for projects that are large or require testing to be repeated multiple times. 
+It also could be applied to projects that already have been through an initial manual testing process.  
+
+3.What is TDD?
+In layman’s terms, Test Driven Development (TDD) is a software development practice that 
+focuses on creating unit test cases before developing the actual code. 
+It is an iterative approach combining programming, unit test creation, and refactoring.

@@ -27,7 +27,7 @@ const range = function (start_num, end_num) {
   if (end_num - start_num === 2) {
     return [start_num + 1];
   } else {
-    var list = range(start_num, end_num - 1);
+    let list = range(start_num, end_num - 1);
     list.push(end_num - 1);
     return list;
   }
@@ -67,7 +67,7 @@ const fibonacci_series = function (n) {
   if (n <= 1) {
     return [0, 1];
   } else {
-    const s = fibonacci_series(n - 1);
+    let s = fibonacci_series(n - 1);
     s.push(s[s.length - 1] + s[s.length - 2]);
     return s.slice(0, n);
   }
